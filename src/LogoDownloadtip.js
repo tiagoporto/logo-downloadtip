@@ -1,17 +1,20 @@
 import { html, css, LitElement } from 'lit-element';
 import tippy from 'tippy.js';
+import './logo-downloadtip.css';
 
 export default class LogoDownloadtip extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: inline-block;
+        display: inline-block !important;
+        outline: none;
       }
     `;
   }
 
   static get properties() {
     return {
+      width: { type: Number },
       position: { type: String },
       tooltipInstance: { type: Object },
       title: { type: String },
@@ -19,9 +22,15 @@ export default class LogoDownloadtip extends LitElement {
     };
   }
 
-  // constructor() {
-  //   super();
-  // }
+  constructor() {
+    super();
+
+    this.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      this.downloadTip();
+    });
+  }
 
   downloadTip() {
     const options = {
@@ -30,56 +39,38 @@ export default class LogoDownloadtip extends LitElement {
     };
 
     // Create elements
-    const header = document.createElement('h3');
-    header.innerText = options.title;
-    const content = document.createElement('div');
-    content.setAttribute('class', 'content');
+    const tooltipTitle = `<h1>${options.title}</h1>`;
+    let links = '';
 
     // Get the logos
     const images = document.getElementsByTagName('link');
+
     Array.from(images).forEach(el => {
       if (el.type.match(/image/)) {
         const { title } = el.dataset;
         const { href } = el;
-        const logo = document.createElement('a');
-        logo.innerText = title;
-        logo.setAttribute('href', href);
-        content.appendChild(logo);
+        links += `<a href="${href}">${title}</a>`;
       }
     });
 
-    const container = document.createElement('div');
-    container.append(header);
-    container.append(content);
+    const content = `${tooltipTitle}<div class="content">${links}</div>`;
 
     if (!this.tooltipInstance) {
       this.tooltipInstance = tippy(this, {
-        content: container.innerHTML,
-        arrow: true,
-        trigger: 'manual',
+        content,
         interactive: true,
+        trigger: 'manual',
         placement: options.position,
         theme: 'logo-downloadtip',
+        inertia: true,
       });
     }
 
-    this.tooltipInstance.show(400);
-
-    // Remove downloadtip
-    document.addEventListener('mousedown', e => {
+    if (this.tooltipInstance && this.tooltipInstance.state && this.tooltipInstance.state.isShown) {
       this.tooltipInstance.hide(400);
-    });
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-
-    // add old browser support
-    this.addEventListener('contextmenu', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      this.downloadTip();
-    });
+    } else {
+      this.tooltipInstance.show(400);
+    }
   }
 
   render() {

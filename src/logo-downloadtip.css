@@ -1,0 +1,37 @@
+.tippy-tooltip.logo-downloadtip-theme {
+  background-color: #fff;
+  color: #555;
+  padding: 0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tippy-tooltip.logo-downloadtip-theme[data-animatefill] {
+  background-color: transparent;
+}
+
+.tippy-tooltip.logo-downloadtip-theme .tippy-backdrop {
+  background-color: #fff;
+}
+
+.logo-downloadtip-theme h1 {
+  background: #ebebeb;
+  font-size: 14px;
+  margin: 0;
+  padding: 8px 14px;
+}
+
+.logo-downloadtip-theme a {
+  color: #555;
+  display: block;
+  text-decoration: none;
+}
+
+.logo-downloadtip-theme a:hover {
+  text-decoration: underline;
+}
+
+.logo-downloadtip-theme .content {
+  color: #333;
+  font-size: 13px;
+  padding: 9px 14px;
+}

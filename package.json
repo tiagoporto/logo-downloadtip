@@ -1,13 +1,28 @@
 {
   "name": "logo-downloadtip",
-  "version": "0.0.0",
-  "description": "Webcomponent logo-downloadtip following open-wc recommendations",
-  "author": "logo-downloadtip",
-  "homepage": "https://github.com/open-wc/open-wc/",
+  "version": "1.0.0-alpha.0",
+  "description": "Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.",
+  "homepage": "https://tiagoporto.github.io/logo-downloadtip",
+  "keywords": [
+    "logo",
+    "logotype",
+    "downloadtip",
+    "webcomponent",
+    "react",
+    "vue"
+  ],
+  "author": {
+    "name": "Tiago Porto",
+    "url": "http://tiagoporto.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagoporto/logo-downloadtip.git"
+  },
+  "main": "./dist/logo-downloadtip.js",
   "license": "MIT",
-  "repository": "https://github.com/open-wc/open-wc/",
   "scripts": {
-    "start": "owc-dev-server --open src",
+    "start": "owc-dev-server --open demo",
     "lint:eslint": "eslint --ext .js,.html .",
     "format:eslint": "eslint --ext .js,.html . --fix",
     "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
@@ -23,11 +38,11 @@
     "test:bs": "karma start karma.bs.config.js --legacy --coverage",
     "build": "rimraf dist && rollup -c rollup.config.js",
     "start:build": "http-server dist -o -c-1",
-    "watch:build": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1"
-  },
-  "dependencies": {
-    "lit-html": "^1.0.0",
-    "lit-element": "^2.0.1"
+    "watch:build": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1",
+    "deploy": "gh-pages -d demo",
+    "prepare": "npm run build",
+    "tag": "git tag v$npm_package_version",
+    "postpublish": "npm run tag && git push --tags"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
@@ -38,12 +53,16 @@
     "@open-wc/testing": "^0.11.1",
     "@open-wc/testing-karma": "^1.0.0",
     "@open-wc/testing-karma-bs": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "http-server": "^0.11.1",
     "husky": "^1.0.0",
     "lint-staged": "^8.0.0",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0",
     "owc-dev-server": "^0.3.0",
     "rimraf": "^2.6.3",
     "rollup": "^1.6.0",
+    "rollup-plugin-postcss": "^2.0.3",
     "tippy.js": "^4.3.0",
     "webpack-merge": "^4.1.5"
   },
