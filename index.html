@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./index.css">
 
-  <link rel="icon" type="image/svg" href="img/webready_sweden_logo.svg" data-title="Vector file (.svg)" />
-  <link rel="icon" type="image/png" href="img/webready_sweden_logo600.png" data-title="Bitmap file (.png)" />
+  <link rel="icon" type="image/svg" href="./img/logo.svg" data-title="Vector file (.svg)" />
+  <link rel="icon" type="image/png" href="./img/logo600.png" data-title="Bitmap file (.png)" />
 </head>
 <body>
     <a href="https://github.com/tiagoporto/logo-downloadtip" class="github-corner" aria-label="View source on GitHub">
@@ -22,33 +22,91 @@
     <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
     <div class="container">
+      <div class="logo-container">
       <logo-downloadtip>
-          <img
-            src="./img/logo.svg"
-            alt="Logo"
-            width="150"
-          />
-        </logo-downloadtip>
+        <img
+          src="./img/logo.svg"
+          alt="Logo"
+          width="300"
+        />
+      </logo-downloadtip>
+      </div>
 
+      <div class="description">
+          Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
+      </div>
         <nav class="clearfix">
             <ul id="head-menu">
-                <li><a href="#">Demo</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#demo" onclick="showContent('demo')">Demo</a></li>
+                <li><a href="https://github.com/tiagoporto/logo-downloadtip#logo-downloadtip">Usage</a></li>
+                <li><a href="#about" onclick="showContent('about')">About</a></li>
             </ul>
         </nav>
 
-        <div id="content">
-            <h2>Logo Downloadtip</h2>
-            <p>
-                Right-click the logo to see the example.
-            </p>
-            <p>
-                The plugin checks for <code>&lt;link&gt;</code> tags in the header with <code>type=image/extension</code> attribute and then creates links, so the user in a easy way can download the high resolution vector logo for example.
-            </p>
-        </div>
+        <main id="content">
+          <section id="demo">
+            <p>Right-click the logo above to see the example.</p>
+            <p>The web component checks for <code>&lt;link&gt;</code> tags in the header with <code>type=image/extension</code> attribute and then creates links, so the user in a easy way can download the high resolution vector logo for example.</p>
+          </section>
+
+          <section id="about">
+            The original ideia for this project was by <a href="https://github.com/jarnesjo/jquery-logo-downloadtip">Nicklas Jarnesjö</a> after seeing <a href="http://relogo.org">relogo</a>, but the <a href="http://microformats.org/wiki/rel-logo">microformats</a> rejected the initiative, the project was discontinued and I decided to continue.
+          </section>
+        </main>
     </div>
 
-  <script type="module" src="./logo-downloadtip.js"></script>
+
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+    <script type="module" src="./logo-downloadtip.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32351360-4"></script>
+  <script>
+    document.getElementById('about').classList.add('hidden')
+
+    function showContent(showSection) {
+      const sections = document.getElementsByTagName('section')
+      for (i = 0; i < sections.length; i++) {
+        console.log(sections)
+        sections[i].classList.add('hidden')
+      }
+
+      console.log(document.getElementById(showSection))
+      document.getElementById(showSection).classList.remove('hidden')
+    }
+
+    var hostname = window.location && window.location.hostname
+    var isMyDomain = hostname === "tiagoporto.github.io"
+
+    function addGTM(param) {
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-32351360-4', param);
+
+        if(param) {
+          gtag('event', 'unknown_access', {
+            'event_label': 'Unknown access',
+            'event_category': 'unknown_user',
+            'non_interaction': true
+          });
+        }
+    }
+
+    if(isMyDomain || hostname !== "localhost"){
+      if (isMyDomain) {
+        addGTM()
+      } else {
+        addGTM(
+          {
+            'page_title': document.title,
+            'page_location': window.location.origin,
+            'page_path': window.location.pathname
+          }
+        )
+      }
+    }
+
+  </script>
 </body>
 </html>
