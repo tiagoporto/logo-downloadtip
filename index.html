@@ -66,11 +66,9 @@
     function showContent(showSection) {
       const sections = document.getElementsByTagName('section')
       for (i = 0; i < sections.length; i++) {
-        console.log(sections)
         sections[i].classList.add('hidden')
       }
 
-      console.log(document.getElementById(showSection))
       document.getElementById(showSection).classList.remove('hidden')
     }
 
