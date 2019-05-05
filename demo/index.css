@@ -81,6 +81,14 @@ textarea {
 /* ==========================================================================
       Author's custom styles
       ========================================================================== */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 a {
   color: red;
 }
@@ -97,7 +105,15 @@ body {
 .container {
   margin: 0 auto;
   overflow: hidden;
-  width: 600px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 0;
+    width: 600px;
+  }
 }
 
 #head-menu {

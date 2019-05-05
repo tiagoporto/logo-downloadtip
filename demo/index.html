@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Downloadtip for Logo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Description" content="Put your description here.">
 
   <link rel="stylesheet" href="./normalize.css">
@@ -66,11 +66,9 @@
     function showContent(showSection) {
       const sections = document.getElementsByTagName('section')
       for (i = 0; i < sections.length; i++) {
-        console.log(sections)
         sections[i].classList.add('hidden')
       }
 
-      console.log(document.getElementById(showSection))
       document.getElementById(showSection).classList.remove('hidden')
     }
 
