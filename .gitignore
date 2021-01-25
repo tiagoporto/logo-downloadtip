@@ -61,16 +61,5 @@ typings/
 .next
 
 
-demo/
-src/
-test/
-.editorconfig
-.eslintignore
-.eslintrc.js
-.prettierignore
-.commitlint.config.js
-.husky.config.js
-.karma.bs.config.js
-.karma.conf.js
-.prettier.config.js
-.rollup.config.js
+/dist
+/package
