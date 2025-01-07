@@ -36,16 +36,11 @@
     "test:prune-snapshots": "karma start --prune-snapshots",
     "test:legacy": "karma start --legacy --coverage",
     "test:legacy:watch": "karma start --legacy --auto-watch=true --single-run=false",
-    "test:bs": "karma start karma.bs.config.js --legacy --coverage",
-    "build": "rimraf dist && rollup -c rollup.config.js",
-    "start:build": "http-server dist -o -c-1",
-    "watch:build": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1",
-    "prepare": "npm run build"
+    "test:bs": "karma start karma.bs.config.js --legacy --coverage"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.0",
-    "@open-wc/building-rollup": "^0.3.0",
     "@open-wc/eslint-config": "^0.4.1",
     "@open-wc/prettier-config": "^0.1.0",
     "@open-wc/testing": "^0.11.1",
@@ -59,8 +54,6 @@
     "lit-html": "^1.0.0",
     "owc-dev-server": "^0.3.0",
     "rimraf": "^2.6.3",
-    "rollup": "^1.6.0",
-    "rollup-plugin-postcss": "^2.0.3",
     "tippy.js": "^4.3.0",
     "webpack-merge": "^4.1.5"
   }
