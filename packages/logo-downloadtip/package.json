@@ -1,0 +1,31 @@
+{
+  "name": "logo-downloadtip",
+  "version": "0.0.0-development",
+  "description": "Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.",
+  "homepage": "https://tiagoporto.github.io/logo-downloadtip",
+  "keywords": [
+    "logo",
+    "logotype",
+    "downloadtip",
+    "webcomponent",
+    "react",
+    "vue"
+  ],
+  "author": {
+    "name": "Tiago Porto",
+    "url": "http://tiagoporto.com"
+  },
+  "repository": {
+    "url": "git+https://github.com/tiagoporto/logo-downloadtip.git",
+    "directory": "packages/logo-downloadtip"
+  },
+  "funding": "https://github.com/sponsors/tiagoporto",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "files": [],
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "tippy.js": "^4.3.0"
+  }
+}

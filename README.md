@@ -5,12 +5,9 @@
 </p>
 
 [![Release](https://img.shields.io/npm/v/logo-downloadtip.svg?style=flat-square&label=release)](https://github.com/tiagoporto/logo-downloadtip/releases)
-[![Versions changelog](https://img.shields.io/badge/-changelog-grey.svg?style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/releases)
 
 [![Downloads](https://img.shields.io/npm/dt/logo-downloadtip.svg?style=flat-square)](https://www.npmjs.com/package/logo-downloadtip)
 [![install size](https://packagephobia.now.sh/badge?p=logo-downloadtip)](https://packagephobia.now.sh/result?p=logo-downloadtip)
-
-[![License](https://img.shields.io/github/license/tiagoporto/logo-downloadtip.svg?style=flat-square)](LICENSE)
 
 <!-- [![Build Status](https://img.shields.io/travis/com/tiagoporto/logo-downloadtip/main.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/logo-downloadtip)
 [![Coverage Status](https://img.shields.io/coveralls/tiagoporto/logo-downloadtip.svg?style=flat-square)](https://coveralls.io/github/tiagoporto/logo-downloadtip)
@@ -33,7 +30,12 @@ npm i logo-downloadtip
 ```html
 <html>
   <head>
-    <link rel="icon" type="image/svg" href="./img/logo.svg" data-title="Vector file (.svg)" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="./img/logo.svg"
+      data-title="Vector file (.svg)"
+    />
   </head>
 
   <logo-downloadtip>
@@ -47,12 +49,10 @@ npm i logo-downloadtip
 ## Options
 
 ```html
-  <logo-downloadtip
-    title="Tolltip Title"
-    position="top|bottom|right|left">
-  </logo-downloadtip>
+<logo-downloadtip title="Tolltip Title" position="top|bottom|right|left">
+</logo-downloadtip>
 ```
 
 ## License
 
-Logo Downloadtip is released under the terms of the [license](LICENSE).
+This project is licensed under the [license](LICENSE).

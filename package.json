@@ -1,60 +1,14 @@
 {
-  "name": "logo-downloadtip",
-  "version": "1.0.0-alpha.0",
-  "description": "Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.",
-  "homepage": "https://tiagoporto.github.io/logo-downloadtip",
-  "keywords": [
-    "logo",
-    "logotype",
-    "downloadtip",
-    "webcomponent",
-    "react",
-    "vue"
-  ],
-  "author": {
-    "name": "Tiago Porto",
-    "url": "http://tiagoporto.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tiagoporto/logo-downloadtip.git"
-  },
-  "main": "./dist/logo-downloadtip.js",
-  "files": [],
+  "name": "logo-downloadtip-project",
+  "private": true,
   "license": "MIT",
-  "scripts": {
-    "start": "owc-dev-server --open demo",
-    "lint:eslint": "eslint --ext .js,.html .",
-    "format:eslint": "eslint --ext .js,.html . --fix",
-    "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
-    "format:prettier": "prettier \"**/*.js\" --write",
-    "lint": "npm run lint:eslint && npm run lint:prettier",
-    "format": "npm run format:eslint && npm run format:prettier",
-    "test": "karma start --coverage",
-    "test:watch": "karma start --auto-watch=true --single-run=false",
-    "test:update-snapshots": "karma start --update-snapshots",
-    "test:prune-snapshots": "karma start --prune-snapshots",
-    "test:legacy": "karma start --legacy --coverage",
-    "test:legacy:watch": "karma start --legacy --auto-watch=true --single-run=false",
-    "test:bs": "karma start karma.bs.config.js --legacy --coverage"
-  },
+  "scripts": {},
+  "workspaces": [
+    "packages/logo-downloadtip"
+  ],
   "devDependencies": {
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.0",
-    "@open-wc/eslint-config": "^0.4.1",
-    "@open-wc/prettier-config": "^0.1.0",
-    "@open-wc/testing": "^0.11.1",
-    "@open-wc/testing-karma": "^1.0.0",
-    "@open-wc/testing-karma-bs": "^1.0.0",
     "@tiagoporto/dependabot-config": "^1.0.0",
     "@tiagoporto/editor-config": "^1.0.0",
-    "http-server": "^0.11.1",
-    "husky": "^1.0.0",
-    "lit-element": "^2.0.1",
-    "lit-html": "^1.0.0",
-    "owc-dev-server": "^0.3.0",
-    "rimraf": "^2.6.3",
-    "tippy.js": "^4.3.0",
-    "webpack-merge": "^4.1.5"
+    "logo-downloadtip": "0.0.0-development"
   }
 }
