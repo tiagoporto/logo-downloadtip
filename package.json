@@ -43,7 +43,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.0.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^7.0.0",
     "@open-wc/building-rollup": "^0.3.0",
     "@open-wc/eslint-config": "^0.4.1",
