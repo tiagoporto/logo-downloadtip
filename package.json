@@ -40,10 +40,7 @@
     "build": "rimraf dist && rollup -c rollup.config.js",
     "start:build": "http-server dist -o -c-1",
     "watch:build": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1",
-    "deploy": "gh-pages -d demo",
-    "prepare": "npm run build",
-    "tag": "git tag v$npm_package_version",
-    "postpublish": "npm run tag && git push --tags"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
@@ -56,7 +53,6 @@
     "@open-wc/testing-karma-bs": "^1.0.0",
     "@tiagoporto/dependabot-config": "^1.0.0",
     "@tiagoporto/editor-config": "^1.0.0",
-    "gh-pages": "^2.0.1",
     "http-server": "^0.11.1",
     "husky": "^1.0.0",
     "lit-element": "^2.0.1",
