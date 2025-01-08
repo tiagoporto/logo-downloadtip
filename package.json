@@ -1,14 +1,23 @@
 {
   "name": "logo-downloadtip-project",
   "private": true,
+  "type": "module",
   "license": "MIT",
-  "scripts": {},
-  "workspaces": [
-    "packages/logo-downloadtip"
-  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky"
+  },
+  "packageManager": "pnpm@9.15.2",
+  "engines": {
+    "node": ">=23",
+    "npm": "uses pnpm",
+    "pnpm": ">=9"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@tiagoporto/dependabot-config": "^1.0.0",
     "@tiagoporto/editor-config": "^1.0.0",
-    "logo-downloadtip": "0.0.0-development"
+    "husky": "^9.1.7"
   }
 }
