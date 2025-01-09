@@ -1,5 +1,5 @@
-import { html, render } from 'lit-html';
-import '../src/logo-downloadtip.js';
+import { html, render } from 'lit-html'
+import '../src/logo-downloadtip.js'
 
 render(
   html`
@@ -11,4 +11,4 @@ render(
     </logo-downloadtip>
   `,
   document.querySelector('#demo'),
-);
+)

@@ -1,3 +1,3 @@
-import LogoDownloadtip from './LogoDownloadtip.js';
+import LogoDownloadtip from './LogoDownloadtip.js'
 
-window.customElements.define('logo-downloadtip', LogoDownloadtip);
+window.customElements.define('logo-downloadtip', LogoDownloadtip)

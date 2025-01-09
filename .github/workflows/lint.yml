@@ -1,0 +1,55 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [
+        synchronize, # PR was updated
+        opened, # PR was open
+        reopened, # PR was closed and is now open again
+        ready_for_review, # PR was converted from draft to open
+      ]
+
+concurrency:
+  group: 'lint'
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - name: Check Formatting
+        run: pnpm formatting:check
+
+      # - name: Check Typing
+      #   run: pnpm typecheck
+
+      # - name: Lint Styles
+      #   run: pnpm lint:styles
+
+      # - name: Lint
+      #   run: pnpm lint
+
+      # - name: Check Site build
+      #   run: pnpm build
+
+      # - name: Check Lib pack
+      #   run: pnpm --filter logo-downloadtip prepack
