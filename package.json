@@ -6,6 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
+    "check-docs": "remark --frail . --ext md,markdown,mdx",
     "formatting:check": "prettier --check --ignore-unknown \"**/*\"",
     "formatting": "npm run formatting:check -- --write"
   },
@@ -21,8 +22,11 @@
     "@tiagoporto/dependabot-config": "^1.0.0",
     "@tiagoporto/editor-config": "^1.0.0",
     "@tiagoporto/prettier-config": "^1.1.0",
+    "@tiagoporto/remark-config": "^1.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "remark": "^15.0.1",
+    "remark-cli": "^12.0.1"
   }
 }

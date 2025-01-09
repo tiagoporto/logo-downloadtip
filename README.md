@@ -1,8 +1,8 @@
 # Logo Downloadtip ![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg)
 
 [![Release](https://img.shields.io/npm/v/logo-downloadtip.svg?style=flat-square&label=release)](https://github.com/tiagoporto/logo-downloadtip/releases)
-[![Downloads](https://img.shields.io/npm/dt/logo-downloadtip.svg?style=flat-square)](https://www.npmjs.com/package/logo-downloadtip)
-[![install size](https://packagephobia.now.sh/badge?p=logo-downloadtip)](https://packagephobia.now.sh/result?p=logo-downloadtip)
+[![Downloads](https://img.shields.io/npm/d18m/logo-downloadtip.svg?style=flat-square)](https://www.npmjs.com/package/logo-downloadtip)
+[![install size](https://packagephobia.com/badge?p=logo-downloadtip)](https://packagephobia.com/result?p=logo-downloadtip)
 
 <!-- [![Build Status](https://img.shields.io/travis/com/tiagoporto/logo-downloadtip/main.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/logo-downloadtip)
 [![Coverage Status](https://img.shields.io/coveralls/tiagoporto/logo-downloadtip.svg?style=flat-square)](https://coveralls.io/github/tiagoporto/logo-downloadtip)
@@ -10,7 +10,7 @@
 
 > Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
 
-The original ideia for this project was by [Nicklas Jarnesjö](https://github.com/jarnesjo/jquery-logo-downloadtip) after seeing [relogo](http://relogo.org/), but the [microformats](http://microformats.org/wiki/rel-logo) rejected the initiative, the project was discontinued and I decided to continue.
+The original ideia for this project was by [Nicklas Jarnesjö](https://github.com/jarnesjo/jquery-logo-downloadtip) after seeing [relogo](http://relogo.org), but the [microformats](http://microformats.org/wiki/rel-logo) rejected the initiative, the project was discontinued and I decided to continue.
 
 ## Installation 📦
 

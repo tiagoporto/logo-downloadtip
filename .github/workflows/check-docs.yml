@@ -1,4 +1,4 @@
-name: Lint
+name: Check Docs
 
 on:
   push:
@@ -16,8 +16,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  checks:
-    name: Checks
+  check:
+    name: Check
     runs-on: ubuntu-latest
 
     steps:
@@ -36,20 +36,5 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Check Formatting
-        run: pnpm formatting:check
-
-      # - name: Check Typing
-      #   run: pnpm typecheck
-
-      # - name: Lint Styles
-      #   run: pnpm lint:styles
-
-      # - name: Lint
-      #   run: pnpm lint
-
-      # - name: Check Site build
-      #   run: pnpm build
-
-      # - name: Check Lib pack
-      #   run: pnpm --filter logo-downloadtip prepack
+      - name: Check Docs
+        run: pnpm check-docs
