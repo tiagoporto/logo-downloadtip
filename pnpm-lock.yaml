@@ -15,17 +15,17 @@ importers:
         specifier: ^19.6.0
         version: 19.6.0
       '@tiagoporto/dependabot-config':
-        specifier: ^1.0.0
-        version: 1.0.0
-      '@tiagoporto/editor-config':
-        specifier: ^1.0.0
-        version: 1.0.0
-      '@tiagoporto/prettier-config':
-        specifier: ^1.1.0
-        version: 1.1.0(prettier@3.4.2)
-      '@tiagoporto/remark-config':
         specifier: ^1.2.0
-        version: 1.2.0(prettier@3.4.2)(remark-cli@12.0.1)(remark@15.0.1)
+        version: 1.2.0
+      '@tiagoporto/editor-config':
+        specifier: ^1.3.0
+        version: 1.3.0
+      '@tiagoporto/prettier-config':
+        specifier: ^1.2.0
+        version: 1.2.0(prettier@3.4.2)
+      '@tiagoporto/remark-config':
+        specifier: ^1.6.0
+        version: 1.6.0(prettier@3.4.2)(remark-cli@12.0.1)(remark@15.0.1)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -174,22 +174,22 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tiagoporto/dependabot-config@1.0.0':
-    resolution: {integrity: sha512-j0muyjtrASXt7ZMQuq6lN7IVoKKeDCUVKbdgOIp4MxH9zgLJ2vJ0bpRp432UHx63aXGVr6WuFGZvJPXUOGXuUA==}
+  '@tiagoporto/dependabot-config@1.2.0':
+    resolution: {integrity: sha512-0qYF19yP1cMCGWuWaxTulfKmQTZk9NyqIhmt7w+7Wa4JPPQrIn7W05o/IFFxAZBtYmwxdPe37RsTBbCoUInaRA==}
     engines: {node: '>=18'}
 
-  '@tiagoporto/editor-config@1.0.0':
-    resolution: {integrity: sha512-pk7Vo0fPEyxorBpPopKxMsIulElHKcq5XB5zGyNvMw8+uB9H/SdEXD13kuxzm2cqQxu0T42kD6ZKROuWPiBDog==}
+  '@tiagoporto/editor-config@1.3.0':
+    resolution: {integrity: sha512-HZDCItg5Al2J6e/imD0YuZjvLnODk5qHwPps11z7eA0C8b2lSB8LeOdfoNnIoYYxlCQQecBGzWDFtHm2k5+OlA==}
     engines: {node: '>=18'}
 
-  '@tiagoporto/prettier-config@1.1.0':
-    resolution: {integrity: sha512-rZpMbuNkhUGWrj3I3XpQBDayT1pDMdgBAKzfH6DoaeK9xr0Z2ZaX9+e5jTW+E4NONUSFSvPUsSol3dkPZ75Y8g==}
+  '@tiagoporto/prettier-config@1.2.0':
+    resolution: {integrity: sha512-qXNEHlppRYEmG9XtNb2lql5eGUvdE9qAi8b96TaYLTVYU917QJLO4AYlelXRIqPGTE/L8cjfK+Zl9scqrosKrQ==}
     engines: {node: '>=18'}
     peerDependencies:
       prettier: '>= 3'
 
-  '@tiagoporto/remark-config@1.2.0':
-    resolution: {integrity: sha512-jh2pM3qbb3lHE+KkzH2Shz28LMVsL3ZNVIUfmsDTiVZ0tzzkupln8AljgowOrw8VnahAc4m6XcoZJgqE6xJqbA==}
+  '@tiagoporto/remark-config@1.6.0':
+    resolution: {integrity: sha512-zvK0EtcoM0M1Pt1o90b8ZqNR4X+rr25jqUhy5KS5iLxclZtOO/uDb83tWteCbaKllk/wwePD850UI1gaX33mGQ==}
     engines: {node: '>=18'}
     peerDependencies:
       remark: ^15.0.0
@@ -2102,15 +2102,15 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tiagoporto/dependabot-config@1.0.0': {}
+  '@tiagoporto/dependabot-config@1.2.0': {}
 
-  '@tiagoporto/editor-config@1.0.0': {}
+  '@tiagoporto/editor-config@1.3.0': {}
 
-  '@tiagoporto/prettier-config@1.1.0(prettier@3.4.2)':
+  '@tiagoporto/prettier-config@1.2.0(prettier@3.4.2)':
     dependencies:
       prettier: 3.4.2
 
-  '@tiagoporto/remark-config@1.2.0(prettier@3.4.2)(remark-cli@12.0.1)(remark@15.0.1)':
+  '@tiagoporto/remark-config@1.6.0(prettier@3.4.2)(remark-cli@12.0.1)(remark@15.0.1)':
     dependencies:
       remark: 15.0.1
       remark-cli: 12.0.1
