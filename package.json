@@ -5,10 +5,12 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
-    "checks": "npm run check-docs && npm run formatting:check",
+    "checks": "npm run check-docs && npm run formatting:check && npm run lint",
     "check-docs": "remark --frail . --ext md,markdown,mdx",
     "formatting:check": "prettier --check --ignore-unknown \"**/*\"",
-    "formatting": "npm run formatting:check -- --write"
+    "formatting": "npm run formatting:check -- --write",
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "npm run lint -- --write"
   },
   "packageManager": "pnpm@9.15.2",
   "engines": {
@@ -21,8 +23,11 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@tiagoporto/dependabot-config": "^1.2.0",
     "@tiagoporto/editor-config": "^1.3.0",
+    "@tiagoporto/eslint-config": "^2.6.0",
     "@tiagoporto/prettier-config": "^1.2.0",
     "@tiagoporto/remark-config": "^1.6.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",

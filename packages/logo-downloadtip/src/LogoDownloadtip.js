@@ -1,5 +1,6 @@
-import { html, css, LitElement } from 'lit-element'
+import { css, html, LitElement } from 'lit-element'
 import tippy from 'tippy.js'
+
 import './logo-downloadtip.css'
 
 export default class LogoDownloadtip extends LitElement {
