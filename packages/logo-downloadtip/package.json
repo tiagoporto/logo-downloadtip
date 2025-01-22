@@ -26,6 +26,6 @@
   "license": "MIT",
   "scripts": {},
   "devDependencies": {
-    "tippy.js": "^4.3.0"
+    "tippy.js": "^6.3.7"
   }
 }
