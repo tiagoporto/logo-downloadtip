@@ -5,6 +5,7 @@
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
+    "svelte.svelte-vscode",
     "unifiedjs.vscode-remark"
   ],
   "unwantedRecommendations": []
