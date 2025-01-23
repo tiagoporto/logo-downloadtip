@@ -79,8 +79,6 @@ export default class LogoDownloadtip extends LitElement {
   }
 
   render() {
-    return html`
-      <slot></slot>
-    `
+    return html` <slot></slot> `
   }
 }
