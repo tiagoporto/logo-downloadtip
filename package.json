@@ -11,10 +11,10 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
-    "checks": "npm run check-docs && npm run formatting:check && npm run lint && npm run lint:styles",
+    "checks": "npm run check-docs && npm run format:check && npm run lint && npm run lint:styles",
     "check-docs": "remark --frail . --ext md,markdown,mdx",
-    "formatting:check": "prettier --check --ignore-unknown \"**/*\"",
-    "formatting": "npm run formatting:check -- --write",
+    "format:check": "prettier --check --ignore-unknown \"**/*\"",
+    "format": "npm run format:check -- --write",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "npm run lint -- --write",
     "lint:styles": "stylelint \"**/*.{css,scss}\"",

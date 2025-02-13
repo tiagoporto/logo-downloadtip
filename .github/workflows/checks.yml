@@ -35,17 +35,17 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Check Formatting
-        run: pnpm formatting:check
+      - name: Check Format
+        run: pnpm format:check
 
       # - name: Check Typing
       #   run: pnpm typecheck
 
-      # - name: Lint Styles
-      #   run: pnpm lint:styles
+      - name: Lint
+        run: pnpm lint
 
-      # - name: Lint
-      #   run: pnpm lint
+      - name: Lint Styles
+        run: pnpm lint:styles
 
       # - name: Check Site build
       #   run: pnpm build
