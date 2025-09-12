@@ -44,4 +44,4 @@ npm i logo-downloadtip
 
 ## License 📄
 
-This project is licensed under the [MIT License](LICENSE).
+Logo Downloadtip © 2019 by Tiago Porto is licensed under [MIT License](LICENSE).
