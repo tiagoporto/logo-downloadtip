@@ -22,7 +22,7 @@
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
+    "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@tiagoporto/dependabot-config": "^2.4.1",
     "@tiagoporto/editor-config": "^2.1.0",
