@@ -27,8 +27,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(prettier@3.6.2)
       '@tiagoporto/remark-config':
-        specifier: ^1.6.0
-        version: 1.6.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)
+        specifier: ^1.11.0
+        version: 1.11.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)
       '@tiagoporto/stylelint-config':
         specifier: ^1.2.0
         version: 1.2.0(postcss@8.5.6)(stylelint@16.25.0(typescript@5.7.2))
@@ -366,9 +366,9 @@ packages:
     peerDependencies:
       prettier: '>= 3'
 
-  '@tiagoporto/remark-config@1.6.0':
-    resolution: {integrity: sha512-zvK0EtcoM0M1Pt1o90b8ZqNR4X+rr25jqUhy5KS5iLxclZtOO/uDb83tWteCbaKllk/wwePD850UI1gaX33mGQ==}
-    engines: {node: '>=18'}
+  '@tiagoporto/remark-config@1.11.0':
+    resolution: {integrity: sha512-UIf/Rl8NLibIMAzr24pCYdsXXDCzPIOY3h3eIqSm6QiD4TTt9rIaUBFZiVJ3yxqFuxmEvcYPNPkml+Y/PgvwgQ==}
+    engines: {node: '>=20'}
     peerDependencies:
       remark: ^15.0.0
       remark-cli: ^12.0.0
@@ -1181,6 +1181,9 @@ packages:
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
+  fault@2.0.1:
+    resolution: {integrity: sha512-WtySTkS4OKev5JtpHXnib4Gxiurzh5NCGvWrFaZ34m6JehfTUhKZvn9njTfw48t6JumVQOmrKqpmGcdwxnhqBQ==}
+
   file-entry-cache@10.1.4:
     resolution: {integrity: sha512-5XRUFc0WTtUbjfGzEwXc42tiGxQHBmtbUG1h9L2apu4SulCGN3Hqm//9D6FAolf8MYNL7f/YlJl9vy08pj5JuA==}
 
@@ -1220,6 +1223,10 @@ packages:
   form-data-encoder@2.1.4:
     resolution: {integrity: sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw==}
     engines: {node: '>= 14.17'}
+
+  format@0.2.2:
+    resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
+    engines: {node: '>=0.4.x'}
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -1825,6 +1832,9 @@ packages:
   mdast-util-from-markdown@2.0.2:
     resolution: {integrity: sha512-uZhTV/8NBuw0WHkPTrCqDOl0zVe1BIng5ZtHoDk49ME1qqcjYmmLmOf0gELgcRMxN4w2iuIeVso5/6QymSrgmA==}
 
+  mdast-util-frontmatter@2.0.1:
+    resolution: {integrity: sha512-LRqI9+wdgC25P0URIJY9vwocIzCcksduHQ9OF2joxQoyTNVduwLAFUzjoopuRJbJAReaKrNQKAZKL3uCMugWJA==}
+
   mdast-util-gfm-autolink-literal@2.0.1:
     resolution: {integrity: sha512-5HVP2MKaP6L+G6YaxPNjuL0BPrq9orG3TsrZ9YXbA3vDw/ACI4MEsnoDpn6ZNm7GnZgtAcONJyPhOP8tNJQavQ==}
 
@@ -1896,6 +1906,9 @@ packages:
 
   micromark-core-commonmark@2.0.2:
     resolution: {integrity: sha512-FKjQKbxd1cibWMM1P9N+H8TwlgGgSkWZMmfuVucLCHaYqeSvJ0hFeHsIa65pA2nYbes0f8LDHPMrd9X7Ujxg9w==}
+
+  micromark-extension-frontmatter@2.0.0:
+    resolution: {integrity: sha512-C4AkuM3dA58cgZha7zVnuVxBhDsbttIMiytjgsM2XbHAB2faRVaHRle40558FBN+DJcrLNCoqG5mlrpdU4cRtg==}
 
   micromark-extension-gfm-autolink-literal@2.1.0:
     resolution: {integrity: sha512-oOg7knzhicgQ3t4QCjCWgTmfNhvQbDDnJeVu9v81r7NltNCVmhPy1fJRX27pISafdjL+SVc4d3l48Gb6pbRypw==}
@@ -2388,12 +2401,15 @@ packages:
     resolution: {integrity: sha512-2NAEOACoTgo+e+YAaCTODqbrWyhMVmlUyjxNCkTrDRHHQvH6+NbrnqVvQaLH/Q8Ket3v90A43dgAJmXv8y5Tkw==}
     hasBin: true
 
-  remark-emoji@5.0.1:
-    resolution: {integrity: sha512-QCqTSvcZ65Ym+P+VyBKd4JfJfh7icMl7cIOGVmPMzWkDtdD8pQ0nQG7yxGolVIiMzSx90EZ7SwNiVpYpfTxn7w==}
+  remark-emoji@5.0.2:
+    resolution: {integrity: sha512-IyIqGELcyK5AVdLFafoiNww+Eaw/F+rGrNSXoKucjo95uL267zrddgxGM83GN1wFIb68pyDuAsY3m5t2Cav1pQ==}
     engines: {node: '>=18'}
 
-  remark-gfm@4.0.0:
-    resolution: {integrity: sha512-U92vJgBPkbw4Zfu/IiW2oTZLSL3Zpv+uI7My2eq8JxKgqraFdU8YUGicEJCEgSbeaG+QDFqIcwwfMTOEelPxuA==}
+  remark-frontmatter@5.0.0:
+    resolution: {integrity: sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==}
+
+  remark-gfm@4.0.1:
+    resolution: {integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==}
 
   remark-lint-blockquote-indentation@4.0.0:
     resolution: {integrity: sha512-hdUvn+KsJbBKpY9jLY01PmfpJ/WGhLu9GJMXQGU8ADXJc+F5DWSgKAr6GQ1IUKqvGYdEML/KZ61WomWFUuecVA==}
@@ -2554,35 +2570,38 @@ packages:
   remark-mdx@3.1.0:
     resolution: {integrity: sha512-Ngl/H3YXyBV9RcRNdlYsZujAmhsxwzxpDzpDEhFBVAGthS4GDgnctpDjgFl/ULx5UEDzqtW1cyBSNKqYYrqLBA==}
 
+  remark-mdx@3.1.1:
+    resolution: {integrity: sha512-Pjj2IYlUY3+D8x00UJsIOg5BEvfMyeI+2uLPn9VO9Wg4MEtN/VTIq2NEJQfde9PnX15KgtHyl9S0BcTnWrIuWg==}
+
   remark-message-control@8.0.0:
     resolution: {integrity: sha512-brpzOO+jdyE/mLqvqqvbogmhGxKygjpCUCG/PwSCU43+JZQ+RM+sSzkCWBcYvgF3KIAVNIoPsvXjBkzO7EdsYQ==}
 
   remark-parse@11.0.0:
     resolution: {integrity: sha512-FCxlKLNGknS5ba/1lmpYijMUzX2esxW5xQqjWxw2eHFfS2MSdaHVINFmhjo+qN1WhZhNimq0dZATN9pH0IDrpA==}
 
-  remark-preset-lint-consistent@6.0.0:
-    resolution: {integrity: sha512-W3fwxajdietwjnFyTH5x2le63hxWGVOXxIs7KjRqU+5wkkN6ZQyuwPeeomblmS9wQr50fkidhXNHNDyCXtqgxQ==}
+  remark-preset-lint-consistent@6.0.1:
+    resolution: {integrity: sha512-SOLdA36UOU1hiGFm6HAqN9+DORGJPVWxU/EvPVkknTr9V4ULhlzHEJ8OVRMVX3jqoy4lrwb4IqiboVz0YLA7+Q==}
 
-  remark-preset-lint-markdown-style-guide@6.0.0:
-    resolution: {integrity: sha512-izsfNTHeqrRP64VWV6OdJnSUDwKFSthMKiiDcu14ODpPV0t7YiotCQWzgc7L4eW9Ctcp4aB4nHNLSuDmwhEWrQ==}
+  remark-preset-lint-markdown-style-guide@6.0.1:
+    resolution: {integrity: sha512-hVCRMC8PZlI9hnXkZdrvg4n4j1aD//xHWj26Q7iFAbDB3JKtW1Ne72P7QNVyppmdrR6Gj84zhG3qphOLo8/i8A==}
 
-  remark-preset-lint-recommended@7.0.0:
-    resolution: {integrity: sha512-A9aPDL78OO12xG2a83DVd+M2QzdBMjn545fbXj40BFJdpt9t//MADkPAwRfpMCBkKi+iECPUTFCb3Jm8SsFG2w==}
+  remark-preset-lint-recommended@7.0.1:
+    resolution: {integrity: sha512-j1CY5u48PtZl872BQ40uWSQMT3R4gXKp0FUgevMu5gW7hFMtvaCiDq+BfhzeR8XKKiW9nIMZGfIMZHostz5X4g==}
 
-  remark-preset-prettier@2.0.1:
-    resolution: {integrity: sha512-1+cZaM080zTlhQIvZDOj7SFWvW9zevfxsLjTZspLEsBYivMDwCyTodvNvaZLc9p5dUSMik/BjMFKicfhZXh7qg==}
+  remark-preset-prettier@2.0.2:
+    resolution: {integrity: sha512-kTJRYWjcLBqVZZT49uEyWoZXb2DCIADITTizv7zj9SK/Msofl1syVqO7zcLlH6MCkXk3W0dyeKLcmiIyoLegkQ==}
     engines: {node: '>=14.8'}
     peerDependencies:
       prettier: '>=1.0.0'
 
-  remark-retext@6.0.0:
-    resolution: {integrity: sha512-VYs0p+3G4DKm/KtWx7LV8YPbyX4CjBf1SZcEk2usEv3QK6JK4g5EfurDAPUmGVZOx/NcqOiNbozfGqpl2HQfTA==}
+  remark-retext@6.0.1:
+    resolution: {integrity: sha512-GZk8Fa/h88+OhmUlJuqEFX4Pi7OvgI3pq1bHyr/NJibTQxANH8/aZGoOflh4zDAwVDdvgoEk5XOJsWQ8UfjFnA==}
 
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
 
-  remark-validate-links@13.0.2:
-    resolution: {integrity: sha512-YZPiB6eWT6sjVYD+TXisCGzNZwbWmtnqeA6rr7zlYz7LrtKENaT+fPIRjG16tW4dv85su2VsWdw7e3cqS+2Tog==}
+  remark-validate-links@13.1.0:
+    resolution: {integrity: sha512-z+glZ4zoRyrWimQHtoqJEFJdPoIR1R1SDr/JoWjmS6EsYlyhxNuCHtIt165gmV7ltOSFJ+rGsipqRGfBPInd7A==}
 
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
@@ -2625,8 +2644,8 @@ packages:
   retext-equality@7.1.0:
     resolution: {integrity: sha512-YzrGxIfubNetpi5xEZXFaWKaQNdDHYal0JNaIllTRO+vkjO0FRuGgLoYixR1BYR3vx7k6p7c+MdVM1NxTlC+MQ==}
 
-  retext-quotes@6.0.0:
-    resolution: {integrity: sha512-LvWVCSqqvDQvIT8WPXryUBrmgMl7EO3pb4wenJ0NNywpy3/4Kbc3rGULlfsq7K80xEARQ239ujWu9nUqdMTVLA==}
+  retext-quotes@6.0.2:
+    resolution: {integrity: sha512-J+JdHDvWDkibjcld7pEag2/rLoIA0NNbqdHfvv0wrpGv6nsYbEy6TKQi5oRcNO6TzgIH5CRQXs2qiwDr/PbP+g==}
 
   retext-syntax-mentions@4.0.0:
     resolution: {integrity: sha512-5Zs47KXzk+p8aC8wrYhPOk951dDH30aZNIgq0nR+CcIpIoeogm3OfUZ4LYQ6XgNYYEDyM0iV6gTiHWIgfkuDow==}
@@ -3217,10 +3236,6 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  yocto-queue@1.1.1:
-    resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
-    engines: {node: '>=12.20'}
-
   yocto-queue@1.2.1:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
@@ -3601,24 +3616,25 @@ snapshots:
     dependencies:
       prettier: 3.6.2
 
-  '@tiagoporto/remark-config@1.6.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)':
+  '@tiagoporto/remark-config@1.11.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)':
     dependencies:
       remark: 15.0.1
       remark-cli: 12.0.1
-      remark-emoji: 5.0.1
-      remark-gfm: 4.0.0
+      remark-emoji: 5.0.2
+      remark-frontmatter: 5.0.0
+      remark-gfm: 4.0.1
       remark-lint-no-dead-urls: 2.0.1
       remark-lint-no-url-trailing-slash: 3.0.1
-      remark-mdx: 3.1.0
-      remark-preset-lint-consistent: 6.0.0
-      remark-preset-lint-markdown-style-guide: 6.0.0
-      remark-preset-lint-recommended: 7.0.0
-      remark-preset-prettier: 2.0.1(prettier@3.6.2)
-      remark-retext: 6.0.0
-      remark-validate-links: 13.0.2
+      remark-mdx: 3.1.1
+      remark-preset-lint-consistent: 6.0.1
+      remark-preset-lint-markdown-style-guide: 6.0.1
+      remark-preset-lint-recommended: 7.0.1
+      remark-preset-prettier: 2.0.2(prettier@3.6.2)
+      remark-retext: 6.0.1
+      remark-validate-links: 13.1.0
       retext-english: 5.0.0
       retext-equality: 7.1.0
-      retext-quotes: 6.0.0
+      retext-quotes: 6.0.2
       retext-syntax-mentions: 4.0.0
       unified: 11.0.5
     transitivePeerDependencies:
@@ -4589,6 +4605,10 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
+  fault@2.0.1:
+    dependencies:
+      format: 0.2.2
+
   file-entry-cache@10.1.4:
     dependencies:
       flat-cache: 6.1.18
@@ -4635,6 +4655,8 @@ snapshots:
       signal-exit: 4.1.0
 
   form-data-encoder@2.1.4: {}
+
+  format@0.2.2: {}
 
   fsevents@2.3.3:
     optional: true
@@ -5283,6 +5305,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  mdast-util-frontmatter@2.0.1:
+    dependencies:
+      '@types/mdast': 4.0.4
+      devlop: 1.1.0
+      escape-string-regexp: 5.0.0
+      mdast-util-from-markdown: 2.0.2
+      mdast-util-to-markdown: 2.1.2
+      micromark-extension-frontmatter: 2.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   mdast-util-gfm-autolink-literal@2.0.1:
     dependencies:
       '@types/mdast': 4.0.4
@@ -5464,6 +5497,13 @@ snapshots:
       micromark-util-normalize-identifier: 2.0.1
       micromark-util-resolve-all: 2.0.1
       micromark-util-subtokenize: 2.0.3
+      micromark-util-symbol: 2.0.1
+      micromark-util-types: 2.0.1
+
+  micromark-extension-frontmatter@2.0.0:
+    dependencies:
+      fault: 2.0.1
+      micromark-util-character: 2.1.1
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.1
 
@@ -5908,7 +5948,7 @@ snapshots:
 
   p-limit@6.2.0:
     dependencies:
-      yocto-queue: 1.1.1
+      yocto-queue: 1.2.1
 
   p-locate@5.0.0:
     dependencies:
@@ -6138,7 +6178,7 @@ snapshots:
       - bluebird
       - supports-color
 
-  remark-emoji@5.0.1:
+  remark-emoji@5.0.2:
     dependencies:
       '@types/mdast': 4.0.4
       emoticon: 4.1.0
@@ -6146,7 +6186,16 @@ snapshots:
       node-emoji: 2.2.0
       unified: 11.0.5
 
-  remark-gfm@4.0.0:
+  remark-frontmatter@5.0.0:
+    dependencies:
+      '@types/mdast': 4.0.4
+      mdast-util-frontmatter: 2.0.1
+      micromark-extension-frontmatter: 2.0.0
+      unified: 11.0.5
+    transitivePeerDependencies:
+      - supports-color
+
+  remark-gfm@4.0.1:
     dependencies:
       '@types/mdast': 4.0.4
       mdast-util-gfm: 3.0.0
@@ -6626,6 +6675,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  remark-mdx@3.1.1:
+    dependencies:
+      mdast-util-mdx: 3.0.0
+      micromark-extension-mdxjs: 3.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   remark-message-control@8.0.0:
     dependencies:
       '@types/mdast': 4.0.4
@@ -6644,7 +6700,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-lint-consistent@6.0.0:
+  remark-preset-lint-consistent@6.0.1:
     dependencies:
       remark-lint: 10.0.0
       remark-lint-blockquote-indentation: 4.0.0
@@ -6664,7 +6720,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-lint-markdown-style-guide@6.0.0:
+  remark-preset-lint-markdown-style-guide@6.0.1:
     dependencies:
       remark-lint: 10.0.0
       remark-lint-blockquote-indentation: 4.0.0
@@ -6713,7 +6769,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-lint-recommended@7.0.0:
+  remark-preset-lint-recommended@7.0.1:
     dependencies:
       remark-lint: 10.0.0
       remark-lint-final-newline: 3.0.0
@@ -6733,11 +6789,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-prettier@2.0.1(prettier@3.6.2):
+  remark-preset-prettier@2.0.2(prettier@3.6.2):
     dependencies:
       prettier: 3.6.2
 
-  remark-retext@6.0.0:
+  remark-retext@6.0.1:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/nlcst': 2.0.3
@@ -6752,7 +6808,7 @@ snapshots:
       mdast-util-to-markdown: 2.1.2
       unified: 11.0.5
 
-  remark-validate-links@13.0.2:
+  remark-validate-links@13.1.0:
     dependencies:
       '@types/hosted-git-info': 3.0.5
       '@types/mdast': 4.0.4
@@ -6821,7 +6877,7 @@ snapshots:
       unist-util-visit: 5.0.0
       vfile: 6.0.3
 
-  retext-quotes@6.0.0:
+  retext-quotes@6.0.2:
     dependencies:
       '@types/nlcst': 2.0.3
       nlcst-to-string: 4.0.0
@@ -7605,8 +7661,6 @@ snapshots:
       yargs-parser: 21.1.1
 
   yocto-queue@0.1.0: {}
-
-  yocto-queue@1.1.1: {}
 
   yocto-queue@1.2.1: {}
 
