@@ -24,11 +24,11 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1(@typescript-eslint/parser@8.21.0(eslint@9.38.0(jiti@2.6.1))(typescript@5.7.2))(eslint@9.38.0(jiti@2.6.1))(typescript@5.7.2)
       '@tiagoporto/prettier-config':
-        specifier: ^1.2.0
-        version: 1.2.0(prettier@3.4.2)
+        specifier: ^2.1.0
+        version: 2.1.0(prettier@3.6.2)
       '@tiagoporto/remark-config':
         specifier: ^1.6.0
-        version: 1.6.0(prettier@3.4.2)(remark-cli@12.0.1)(remark@15.0.1)
+        version: 1.6.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)
       '@tiagoporto/stylelint-config':
         specifier: ^1.1.0
         version: 1.1.0(postcss@8.5.6)(stylelint@16.25.0(typescript@5.7.2))
@@ -45,8 +45,8 @@ importers:
         specifier: ^16.2.6
         version: 16.2.6
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.6.2
+        version: 3.6.2
       remark:
         specifier: ^15.0.1
         version: 15.0.1
@@ -360,9 +360,9 @@ packages:
     peerDependencies:
       eslint: '>= 9'
 
-  '@tiagoporto/prettier-config@1.2.0':
-    resolution: {integrity: sha512-qXNEHlppRYEmG9XtNb2lql5eGUvdE9qAi8b96TaYLTVYU917QJLO4AYlelXRIqPGTE/L8cjfK+Zl9scqrosKrQ==}
-    engines: {node: '>=18'}
+  '@tiagoporto/prettier-config@2.1.0':
+    resolution: {integrity: sha512-n/cRD+L6XJ9fBgp+gFKASRzDdLdjonWfb2b9f4/F8t4HhiBawjgO4nsMxvJdgsR7qMYAYzLljBwwrn0NCpDRiA==}
+    engines: {node: '>=20'}
     peerDependencies:
       prettier: '>= 3'
 
@@ -2312,8 +2312,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3597,11 +3597,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tiagoporto/prettier-config@1.2.0(prettier@3.4.2)':
+  '@tiagoporto/prettier-config@2.1.0(prettier@3.6.2)':
     dependencies:
-      prettier: 3.4.2
+      prettier: 3.6.2
 
-  '@tiagoporto/remark-config@1.6.0(prettier@3.4.2)(remark-cli@12.0.1)(remark@15.0.1)':
+  '@tiagoporto/remark-config@1.6.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)':
     dependencies:
       remark: 15.0.1
       remark-cli: 12.0.1
@@ -3613,7 +3613,7 @@ snapshots:
       remark-preset-lint-consistent: 6.0.0
       remark-preset-lint-markdown-style-guide: 6.0.0
       remark-preset-lint-recommended: 7.0.0
-      remark-preset-prettier: 2.0.1(prettier@3.4.2)
+      remark-preset-prettier: 2.0.1(prettier@3.6.2)
       remark-retext: 6.0.0
       remark-validate-links: 13.0.2
       retext-english: 5.0.0
@@ -6051,7 +6051,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.4.2: {}
+  prettier@3.6.2: {}
 
   proc-log@4.2.0: {}
 
@@ -6733,9 +6733,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-prettier@2.0.1(prettier@3.4.2):
+  remark-preset-prettier@2.0.1(prettier@3.6.2):
     dependencies:
-      prettier: 3.4.2
+      prettier: 3.6.2
 
   remark-retext@6.0.0:
     dependencies:
