@@ -24,7 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^19.6.0",
-    "@tiagoporto/dependabot-config": "^2.4.1",
+    "@tiagoporto/dependabot-config": "^2.5.0",
     "@tiagoporto/editor-config": "^2.1.0",
     "@tiagoporto/eslint-config": "^2.9.1",
     "@tiagoporto/prettier-config": "^1.2.0",
