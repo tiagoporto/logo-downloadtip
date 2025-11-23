@@ -22,6 +22,8 @@
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "devDependencies": {
+    "@anolilab/multi-semantic-release": "^3.0.0",
+    "@anolilab/semantic-release-pnpm": "^3.0.0",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@open-wc/testing": "^4.0.0",
@@ -38,7 +40,13 @@
     "prettier": "^3.6.2",
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
+    "semantic-release": "^25.0.2",
     "stylelint": "^16.25.0",
     "vitest": "^4.0.13"
+  },
+  "pnpm": {
+    "overrides": {
+      "conventional-changelog-conventionalcommits": ">=8.0.0"
+    }
   }
 }
