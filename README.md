@@ -18,9 +18,10 @@ Webcomponent to allow users download multiple logotype image types when they try
 
 [![Docs GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/check-docs.yml?branch=main&label=docs&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/check-docs.yml?query=branch%3Amain)
 [![Checks GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/checks.yml?branch=main&label=checks&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/checks.yml?query=branch%3Amain)
-[![Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/unit-tests.yml?branch=main&label=unit%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/unit-tests.yml?query=branch%3Amain)
-[![E2E Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/e2e-tests.yml?branch=main&label=e2e%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/e2e-tests.yml?query=branch%3Amain)
-[![Coverage Status](https://img.shields.io/codecov/c/github/tiagoporto/logo-downloadtip/main?style=flat-square)](https://app.codecov.io/gh/tiagoporto/logo-downloadtip/tree/main)
+
+<!-- [![Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/unit-tests.yml?branch=main&label=unit%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/unit-tests.yml?query=branch%3Amain) -->
+<!-- [![E2E Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/e2e-tests.yml?branch=main&label=e2e%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/e2e-tests.yml?query=branch%3Amain) -->
+<!-- [![Coverage Status](https://img.shields.io/codecov/c/github/tiagoporto/logo-downloadtip/main?style=flat-square)](https://app.codecov.io/gh/tiagoporto/logo-downloadtip/tree/main) -->
 
 ![Website](https://img.shields.io/website.svg?logo=githubpages&down_message=offline&up_message=online&style=flat-square&url=https://tiagoporto.com/logo-downloadtip)
 ![W3C Validation](https://img.shields.io/w3c-validation/html.svg?style=flat-square&targetUrl=https://tiagoporto.com/logo-downloadtip/)
