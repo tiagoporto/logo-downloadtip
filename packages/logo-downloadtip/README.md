@@ -1,20 +1,16 @@
 # Logo Downloadtip
 
-[![Release](https://img.shields.io/npm/v/logo-downloadtip.svg?style=flat-square&label=release)](https://github.com/tiagoporto/logo-downloadtip/releases)
-[![Downloads](https://img.shields.io/npm/d18m/logo-downloadtip.svg?style=flat-square)](https://www.npmjs.com/package/logo-downloadtip)
-[![install size](https://packagephobia.com/badge?p=logo-downloadtip)](https://packagephobia.com/result?p=logo-downloadtip)
+Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
 
-> Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
+> The original idea for this project was by [Nicklas Jarnesjö](https://github.com/jarnesjo/jquery-logo-downloadtip)
 
-The original ideia for this project was by [Nicklas Jarnesjö](https://github.com/jarnesjo/jquery-logo-downloadtip) after seeing [relogo](http://relogo.org), but the [microformats](http://microformats.org/wiki/rel-logo) rejected the initiative, the project was discontinued and I decided to continue.
-
-## Installation 📦
+## Install
 
 ```bash
 npm i logo-downloadtip
 ```
 
-## Usage ➡️
+## Usage
 
 ```html
 <html>
@@ -38,10 +34,10 @@ npm i logo-downloadtip
 ### Options
 
 ```html
-<logo-downloadtip title="Tolltip Title" position="top|bottom|right|left">
+<logo-downloadtip title="Tooltip Title" position="top|bottom|right|left">
 </logo-downloadtip>
 ```
 
-## License 📄
+## License
 
 Logo Downloadtip © 2019 by Tiago Porto is licensed under [MIT License](LICENSE).

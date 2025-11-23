@@ -1,24 +1,37 @@
 # Logo Downloadtip
 
-[![Release](https://img.shields.io/npm/v/logo-downloadtip.svg?style=flat-square&label=release)](https://github.com/tiagoporto/logo-downloadtip/releases)
-[![Downloads](https://img.shields.io/npm/d18m/logo-downloadtip.svg?style=flat-square)](https://www.npmjs.com/package/logo-downloadtip)
-[![install size](https://packagephobia.com/badge?p=logo-downloadtip)](https://packagephobia.com/result?p=logo-downloadtip)
+[![version](https://img.shields.io/npm/v/logo-downloadtip?style=flat-square)][npm-link]
+[![Downloads](https://img.shields.io/npm/dm/logo-downloadtip.svg?style=flat-square)][npm-link]
+[![npm bundle size](https://img.shields.io/bundlephobia/min/logo-downloadtip?style=flat-square)](https://bundlephobia.com/package/logo-downloadtip)
 
-<!-- [![Build Status](https://img.shields.io/travis/com/tiagoporto/logo-downloadtip/main.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/logo-downloadtip)
-[![Coverage Status](https://img.shields.io/coveralls/tiagoporto/logo-downloadtip.svg?style=flat-square)](https://coveralls.io/github/tiagoporto/logo-downloadtip)
-[![Mutation testing cover](https://badge.stryker-mutator.io/github.com/tiagoporto/logo-downloadtip/main)](https://stryker-mutator.github.io) -->
+<!-- [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/logo-downloadtip) -->
 
-> Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
+Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
 
-The original ideia for this project was by [Nicklas Jarnesjö](https://github.com/jarnesjo/jquery-logo-downloadtip) after seeing [relogo](http://relogo.org), but the [microformats](http://microformats.org/wiki/rel-logo) rejected the initiative, the project was discontinued and I decided to continue.
+> The original idea for this project was by [Nicklas Jarnesjö](https://github.com/jarnesjo/jquery-logo-downloadtip)
 
-## Installation 📦
+## ▶️ Demo
+
+<https://tiagoporto.github.io/logo-downloadtip/>
+
+## ✅ Status
+
+[![Docs GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/check-docs.yml?branch=main&label=docs&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/check-docs.yml?query=branch%3Amain)
+[![Checks GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/checks.yml?branch=main&label=checks&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/checks.yml?query=branch%3Amain)
+[![Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/unit-tests.yml?branch=main&label=unit%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/unit-tests.yml?query=branch%3Amain)
+[![E2E Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/logo-downloadtip/e2e-tests.yml?branch=main&label=e2e%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/logo-downloadtip/actions/workflows/e2e-tests.yml?query=branch%3Amain)
+[![Coverage Status](https://img.shields.io/codecov/c/github/tiagoporto/logo-downloadtip/main?style=flat-square)](https://app.codecov.io/gh/tiagoporto/logo-downloadtip/tree/main)
+
+![Website](https://img.shields.io/website.svg?logo=githubpages&down_message=offline&up_message=online&style=flat-square&url=https://tiagoporto.com/logo-downloadtip)
+![W3C Validation](https://img.shields.io/w3c-validation/html.svg?style=flat-square&targetUrl=https://tiagoporto.com/logo-downloadtip/)
+
+## 📦 Install
 
 ```bash
 npm i logo-downloadtip
 ```
 
-## Usage ➡️
+## ⚙️ Usage
 
 ```html
 <html>
@@ -42,11 +55,11 @@ npm i logo-downloadtip
 ### Options
 
 ```html
-<logo-downloadtip title="Tolltip Title" position="top|bottom|right|left">
+<logo-downloadtip title="Tooltip Title" position="top|bottom|right|left">
 </logo-downloadtip>
 ```
 
-## Development 🛠
+## 🛠 Development
 
 ### Pre-requirements
 
@@ -77,6 +90,12 @@ pnpm install
 pnpm install
 ```
 
-## License 📄
+## 🤝 Contributing
+
+[Check how to contribute](https://github.com/tiagoporto/.github/blob/main/CONTRIBUTING.md).
+
+## 📄 License
 
 Logo Downloadtip © 2019 by Tiago Porto is licensed under [MIT License](LICENSE).
+
+[npm-link]: https://www.npmjs.com/package/logo-downloadtip
