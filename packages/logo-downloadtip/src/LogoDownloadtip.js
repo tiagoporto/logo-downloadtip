@@ -44,15 +44,15 @@ export default class LogoDownloadtip extends LitElement {
     let links = ''
 
     // Get the logos
-    const images = document.getElementsByTagName('link')
+    const images = document.querySelectorAll('link')
 
-    Array.from(images).forEach((el) => {
-      if (el.type.match(/image/)) {
-        const { title } = el.dataset
-        const { href } = el
+    for (const element of images) {
+      if (/image/.test(element.type)) {
+        const { title } = element.dataset
+        const { href } = element
         links += `<a href="${href}">${title}</a>`
       }
-    })
+    }
 
     const content = `${tooltipTitle}<div class="content">${links}</div>`
 
@@ -68,9 +68,9 @@ export default class LogoDownloadtip extends LitElement {
     }
 
     if (
-      this.tooltipInstance &&
-      this.tooltipInstance.state &&
-      this.tooltipInstance.state.isShown
+      this.tooltipInstance
+      && this.tooltipInstance.state
+      && this.tooltipInstance.state.isShown
     ) {
       this.tooltipInstance.hide(400)
     } else {

@@ -15,6 +15,7 @@
       href="./img/logo.svg"
       data-title="Vector file (.svg)"
     />
+
     <link
       rel="icon"
       type="image/png"
@@ -134,55 +135,20 @@
 
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
     <script type="module" src="./logo-downloadtip.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-32351360-4"
-    ></script>
+
     <script>
-      document.getElementById('about').classList.add('hidden')
+      document.querySelector('#about').classList.add('hidden')
 
       function showContent(showSection) {
-        const sections = document.getElementsByTagName('section')
-        for (i = 0; i < sections.length; i++) {
-          sections[i].classList.add('hidden')
+        const sections = document.querySelectorAll('section')
+        for (const section of sections) {
+          section.classList.add('hidden')
         }
 
         document.getElementById(showSection).classList.remove('hidden')
       }
 
-      var hostname = window.location && window.location.hostname
-      var isMyDomain = hostname === 'tiagoporto.github.io'
-
-      function addGTM(param) {
-        window.dataLayer = window.dataLayer || []
-        function gtag() {
-          dataLayer.push(arguments)
-        }
-        gtag('js', new Date())
-
-        gtag('config', 'UA-32351360-4', param)
-
-        if (param) {
-          gtag('event', 'unknown_access', {
-            event_label: 'Unknown access',
-            event_category: 'unknown_user',
-            non_interaction: true,
-          })
-        }
-      }
-
-      if (isMyDomain || hostname !== 'localhost') {
-        if (isMyDomain) {
-          addGTM()
-        } else {
-          addGTM({
-            page_title: document.title,
-            page_location: window.location.origin,
-            page_path: window.location.pathname,
-          })
-        }
-      }
+      // TODO: add GA
     </script>
   </body>
 </html>
