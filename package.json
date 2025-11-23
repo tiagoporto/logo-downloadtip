@@ -12,6 +12,7 @@
     "preinstall": "npx only-allow pnpm",
     "postinstall": "$CI = true || (dependabot-config && editor-config)",
     "prepare": "husky",
+    "check-update": "pnpm update --interactive --latest",
     "checks": "npm run check-docs && npm run format:check && npm run lint && npm run lint:styles",
     "check-docs": "remark --frail . --ext md,markdown,mdx",
     "format:check": "prettier --check --ignore-unknown \"**/*\"",
