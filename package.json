@@ -16,6 +16,7 @@
     "check-docs": "remark --frail . --ext md,markdown,mdx",
     "format:check": "prettier --check --ignore-unknown \"**/*\"",
     "format": "npm run format:check -- --write",
+    "typecheck": "tsc --project tsconfig.json",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "npm run lint -- --write",
     "lint:styles": "stylelint \"**/*.{css,scss}\"",
@@ -42,6 +43,7 @@
     "remark-cli": "^12.0.1",
     "semantic-release": "^25.0.2",
     "stylelint": "^16.25.0",
+    "typescript": "^5.9.3",
     "vitest": "^4.0.13"
   },
   "pnpm": {
