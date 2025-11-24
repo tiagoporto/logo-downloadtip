@@ -17,7 +17,8 @@ export const config: Config = {
     },
     {
       type: 'www',
-      serviceWorker: undefined, // disable service workers
+      // eslint-disable-next-line unicorn/no-null
+      serviceWorker: null, // disable service workers
     },
     {
       type: 'docs-vscode',
