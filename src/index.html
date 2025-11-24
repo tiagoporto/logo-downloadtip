@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/github-corner.css" />
 
     <script type="module" src="./build/tiagoporto.esm.js"></script>
     <script nomodule src="./build/tiagoporto.js"></script>
@@ -64,41 +65,21 @@
         ></path>
       </svg>
     </a>
-    <style>
-      .github-corner:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-      }
-      @keyframes octocat-wave {
-        0%,
-        100% {
-          transform: rotate(0);
-        }
-        20%,
-        60% {
-          transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-          transform: rotate(10deg);
-        }
-      }
-      @media (max-width: 500px) {
-        .github-corner:hover .octo-arm {
-          animation: none;
-        }
-        .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out;
-        }
-      }
-    </style>
 
     <div class="container">
       <div class="logo-container">
         <logo-downloadtip>
-          <img src="./assets/img/logo.svg" alt="Logo" width="300" />
+          <!-- eslint-disable-next-line @html-eslint/no-empty-headings -->
+          <h1>
+            <img
+              src="./assets/img/logo.svg"
+              width="300"
+              alt="Logo Downloadtip"
+            />
+          </h1>
         </logo-downloadtip>
 
-        <script type="text/javascript">
+        <script>
           const logoDownloadtip = document.querySelector('logo-downloadtip')
           logoDownloadtip.images = [
             {
@@ -117,6 +98,7 @@
         Webcomponent to allow users download multiple logotype image types when
         they trying to grab low resolution logo.
       </div>
+
       <nav class="clearfix">
         <ul id="head-menu">
           <li><a href="#demo" onclick="showContent('demo')">Demo</a></li>
@@ -132,6 +114,7 @@
 
       <main id="content">
         <section id="demo">
+          <h2>Demo</h2>
           <p>Right-click the logo above to see the example.</p>
           <p>
             The web component checks for <code>&lt;link&gt;</code> tags in the
@@ -142,6 +125,7 @@
         </section>
 
         <section id="about">
+          <h2>About</h2>
           The original ideia for this project was by
           <a href="https://github.com/jarnesjo/jquery-logo-downloadtip"
             >Nicklas Jarnesjö</a
