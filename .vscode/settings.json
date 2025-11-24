@@ -3,5 +3,7 @@
     "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.validate": ["css", "scss"],
+  "html.customData": ["./packages/logo-downloadtip/vscode-data.json"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -1,0 +1,48 @@
+@import '~tippy.js/dist/tippy.css';
+@import '~tippy.js/themes/light.css';
+@import '~tippy.js/themes/translucent.css';
+
+logo-downloadtip {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tippy-content {
+  padding: 0;
+}
+
+.tippy-content h1 {
+  padding: 8px 14px;
+  border-radius: 3px 3px 0 0;
+  margin: 0;
+  background: #ebebeb;
+  font-size: 14px;
+}
+
+.tippy-box[data-theme~='translucent'] .tippy-content h1 {
+  background: #454444;
+  color: #fff;
+}
+
+.tippy-content a {
+  display: block;
+  text-decoration: none;
+}
+
+.tippy-content a:hover {
+  text-decoration: underline;
+}
+
+.tippy-box[data-theme~='light'] .tippy-content a {
+  color: #555;
+}
+
+.tippy-box[data-theme~='translucent'] .tippy-content a {
+  color: #fff;
+}
+
+.tippy-content .content {
+  padding: 9px 14px;
+  color: #333;
+  font-size: 13px;
+}

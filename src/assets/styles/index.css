@@ -29,11 +29,6 @@ body {
     * Customize the background color to match your design.
     */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -46,10 +41,10 @@ body {
 hr {
   display: block;
   height: 1px;
+  padding: 0;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
 }
 
 /*
@@ -65,9 +60,9 @@ img {
     */
 
 fieldset {
+  padding: 0;
   border: 0;
   margin: 0;
-  padding: 0;
 }
 
 /*
@@ -84,71 +79,79 @@ textarea {
 html {
   box-sizing: border-box;
 }
+
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
+
 a {
   color: red;
 }
+
 .description {
-  font-style: italic;
   font-size: 17px;
+  font-style: italic;
   font-weight: 200;
 }
+
+/* stylelint-disable-next-line no-duplicate-selectors */
 body {
+  margin: 22px 0;
   background: #f7f7f7;
   font-size: 14px;
-  margin: 22px 0;
 }
+
 .container {
-  margin: 0 auto;
   overflow: hidden;
   width: 100%;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (width >= 600px) {
   .container {
-    padding: 0;
     width: 600px;
+    padding: 0;
   }
 }
 
 #head-menu {
-  background: #444;
-  margin: 10px 0 0 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
+  width: 100%;
   flex-flow: row nowrap;
   justify-content: center;
+  padding: 0;
   border-radius: 3px;
+  margin: 10px 0 0;
+  background: #444;
   text-align: center;
 }
 
 #head-menu li {
   flex-grow: 1;
 }
+
 #head-menu li a {
-  border-right: 1px solid #111;
-  color: #fff;
   display: block;
   padding: 10px 18px;
+  border-right: 1px solid #111;
+  color: #fff;
   text-decoration: none;
 }
 
 #head-menu a:hover {
   background: #555;
 }
+
 #content {
-  background: #fff;
-  border: 1px solid #eee;
-  margin: 20px 0;
   padding: 5px 20px;
+  border: 1px solid #eee;
   border-radius: 3px;
+  margin: 20px 0;
+  background: #fff;
 }
 
 .logo-container {
@@ -178,14 +181,14 @@ body {
     */
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
+  overflow: hidden;
   width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 /*
@@ -195,12 +198,12 @@ body {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-  clip: auto;
+  position: static;
+  overflow: visible;
+  width: auto;
   height: auto;
   margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
+  clip: auto;
 }
 
 /*
@@ -223,21 +226,12 @@ body {
     *    `:before` to contain the top-margins of child elements.
     */
 
-.clearfix:before,
-.clearfix:after {
-  content: ' '; /* 1 */
+.clearfix::before,
+.clearfix::after {
   display: table; /* 2 */
+  content: ' '; /* 1 */
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
-}
-
-/*
-    * For IE 6/7 only
-    * Include this rule to trigger hasLayout and contain floats.
-    */
-
-.clearfix {
-  *zoom: 1;
 }

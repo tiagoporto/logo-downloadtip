@@ -21,11 +21,24 @@
   },
   "funding": "https://github.com/sponsors/tiagoporto",
   "type": "module",
-  "exports": "./dist/index.js",
+  "module": "./src/index.ts",
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "import": "./dist/index.js"
+      },
+      "./logo-downloadtip": {
+        "import": "./dist/logo-downloadtip.js"
+      }
+    }
+  },
   "files": [],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "stencil build"
+  },
   "devDependencies": {
-    "tippy.js": "^4.3.0"
+    "@stencil/core": "^4.27.1",
+    "tippy.js": "^6.3.7"
   }
 }

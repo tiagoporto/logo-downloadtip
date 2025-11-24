@@ -29,5 +29,11 @@ node_modules/
 .stryker-tmp
 /reports
 
+# stencil
+www/
+loader/
+.stencil
+
 /dist
 /package
+

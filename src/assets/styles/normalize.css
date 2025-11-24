@@ -31,8 +31,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
 /**
@@ -67,8 +65,7 @@ audio:not([controls]) {
 
 html {
   font-size: 100%; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -124,33 +121,33 @@ a:hover {
   */
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.5em;
   margin: 0.83em 0;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.17em;
   margin: 1em 0;
+  font-size: 1.17em;
 }
 
 h4 {
-  font-size: 1em;
   margin: 1.33em 0;
+  font-size: 1em;
 }
 
 h5 {
-  font-size: 0.83em;
   margin: 1.67em 0;
+  font-size: 0.83em;
 }
 
 h6 {
-  font-size: 0.67em;
   margin: 2.33em 0;
+  font-size: 0.67em;
 }
 
 /**
@@ -188,9 +185,8 @@ dfn {
   */
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
   height: 0;
+  box-sizing: content-box;
 }
 
 /**
@@ -246,8 +242,8 @@ q {
   * Address `quotes` property not supported in Safari 4.
   */
 
-q:before,
-q:after {
+q::before,
+q::after {
   content: '';
   content: none;
 }
@@ -266,9 +262,9 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -370,9 +366,9 @@ form {
   */
 
 fieldset {
+  padding: 0.35em 0.625em 0.75em;
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
@@ -382,10 +378,9 @@ fieldset {
   */
 
 legend {
-  border: 0; /* 1 */
   padding: 0;
+  border: 0; /* 1 */
   white-space: normal; /* 2 */
-  *margin-left: -7px; /* 3 */
 }
 
 /**
@@ -399,10 +394,9 @@ button,
 input,
 select,
 textarea {
-  font-size: 100%; /* 1 */
   margin: 0; /* 2 */
+  font-size: 100%; /* 1 */
   vertical-align: baseline; /* 3 */
-  *vertical-align: middle; /* 3 */
 }
 
 /**
@@ -441,9 +435,8 @@ button,
  html input[type="button"], /* 1 */
  input[type="reset"],
  input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
+  appearance: button; /* 2 */
   cursor: pointer; /* 3 */
-  *overflow: visible; /* 4 */
 }
 
 /**
@@ -466,8 +459,6 @@ input[type='checkbox'],
 input[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
-  *height: 13px; /* 3 */
-  *width: 13px; /* 3 */
 }
 
 /**
@@ -477,10 +468,9 @@ input[type='radio'] {
   */
 
 input[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
+  /* 2 */
   box-sizing: content-box;
+  appearance: textfield; /* 1 */
 }
 
 /**
@@ -490,7 +480,7 @@ input[type='search'] {
 
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 /**
@@ -499,8 +489,8 @@ input[type='search']::-webkit-search-decoration {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-  border: 0;
   padding: 0;
+  border: 0;
 }
 
 /**

@@ -1,0 +1,72 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "logo-downloadtip",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "header",
+          "description": ""
+        },
+        {
+          "name": "position",
+          "description": "",
+          "values": [
+            {
+              "name": "bottom"
+            },
+            {
+              "name": "bottom-end"
+            },
+            {
+              "name": "bottom-start"
+            },
+            {
+              "name": "left"
+            },
+            {
+              "name": "left-end"
+            },
+            {
+              "name": "left-start"
+            },
+            {
+              "name": "right"
+            },
+            {
+              "name": "right-end"
+            },
+            {
+              "name": "right-start"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "top-end"
+            },
+            {
+              "name": "top-start"
+            }
+          ]
+        },
+        {
+          "name": "theme",
+          "description": "",
+          "values": [
+            {
+              "name": "dark"
+            },
+            {
+              "name": "light"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

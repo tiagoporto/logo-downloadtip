@@ -2,26 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Downloadtip for Logo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Description" content="Put your description here." />
-
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./index.css" />
-
-    <link
-      rel="icon"
-      type="image/svg"
-      href="./img/logo.svg"
-      data-title="Vector file (.svg)"
+    <title>Logo Downloadtip</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta
+      name="Description"
+      content="Webcomponent to allow users download multiple logotype image types when they trying to grab low resolution logo.
+"
     />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="./img/logo600.png"
-      data-title="Bitmap file (.png)"
+    <meta
+      property="og:url"
+      content="https://tiagoporto.com/logo-downloadtip/"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Logo Downloadtip" />
+    <meta
+      property="og:image"
+      content="https://socialify.git.ci/tiagoporto/logo-downloadtip/image?description=1&name=1&owner=1&theme=Light"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+
+    <script type="module" src="/build/tiagoporto.esm.js"></script>
+    <script nomodule src="/build/tiagoporto.js"></script>
   </head>
   <body>
     <a
@@ -88,8 +95,22 @@
     <div class="container">
       <div class="logo-container">
         <logo-downloadtip>
-          <img src="./img/logo.svg" alt="Logo" width="300" />
+          <img src="./assets/img/logo.svg" alt="Logo" width="300" />
         </logo-downloadtip>
+
+        <script type="text/javascript">
+          const logoDownloadtip = document.querySelector('logo-downloadtip')
+          logoDownloadtip.images = [
+            {
+              title: 'Vector file (.svg)',
+              link: './assets/img/logo.svg',
+            },
+            {
+              title: 'Bitmap file (.png)',
+              link: './assets/img/logo600.png',
+            },
+          ]
+        </script>
       </div>
 
       <div class="description">
@@ -133,18 +154,17 @@
       </main>
     </div>
 
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
-    <script type="module" src="./logo-downloadtip.js"></script>
-
     <script>
       document.querySelector('#about').classList.add('hidden')
 
+      // eslint-disable-next-line no-unused-vars
       function showContent(showSection) {
         const sections = document.querySelectorAll('section')
         for (const section of sections) {
           section.classList.add('hidden')
         }
 
+        // eslint-disable-next-line unicorn/prefer-query-selector
         document.getElementById(showSection).classList.remove('hidden')
       }
 

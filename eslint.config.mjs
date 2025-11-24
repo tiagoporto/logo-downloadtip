@@ -3,6 +3,9 @@ import vitest from '@vitest/eslint-plugin'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
+  {
+    ignores: ['**/components.d.ts'],
+  },
   ...tpConfig.configs.base,
   {
   // web component
@@ -14,6 +17,14 @@ export default [
           case: 'pascalCase',
         },
       ],
+    },
+  },
+  {
+    files: ['**/*.tsx'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': ['error', {
+        varsIgnorePattern: '^h$',
+      }],
     },
   },
   {
