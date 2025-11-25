@@ -17,7 +17,6 @@
   "packageManager": "pnpm@10.23.0",
   "scripts": {
     "postinstall": "$CI = true || (dependabot-config && editor-config)",
-    "prepare": "husky",
     "generate": "stencil generate",
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
@@ -50,8 +49,7 @@
     "@tiagoporto/stylelint-config": "^1.2.0",
     "@vitest/eslint-plugin": "^1.4.3",
     "eslint": "^9.39.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.6",
+    "lefthook": "^2.0.4",
     "prettier": "^3.6.2",
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
@@ -65,6 +63,13 @@
   "pnpm": {
     "overrides": {
       "conventional-changelog-conventionalcommits": ">=8.0.0"
-    }
+    },
+    "ignoredBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ],
+    "onlyBuiltDependencies": [
+      "lefthook"
+    ]
   }
 }
