@@ -44,10 +44,10 @@ importers:
         version: 6.4.0(@typescript-eslint/utils@8.60.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(jiti@2.6.1)(remark-lint-file-extension@3.0.0)(typescript@5.9.3)
       '@tiagoporto/prettier-config':
         specifier: ^2.1.0
-        version: 2.1.0(prettier@3.6.2)
+        version: 2.1.0(prettier@3.9.6)
       '@tiagoporto/remark-config':
         specifier: ^1.11.0
-        version: 1.11.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)
+        version: 1.11.0(prettier@3.9.6)(remark-cli@12.0.1)(remark@15.0.1)
       '@tiagoporto/stylelint-config':
         specifier: ^1.2.0
         version: 1.2.0(postcss@8.5.6)(stylelint@16.25.0(typescript@5.9.3))
@@ -61,8 +61,8 @@ importers:
         specifier: ^2.0.4
         version: 2.0.4
       prettier:
-        specifier: ^3.6.2
-        version: 3.6.2
+        specifier: ^3.9.6
+        version: 3.9.6
       remark:
         specifier: ^15.0.1
         version: 15.0.1
@@ -3515,7 +3515,7 @@ packages:
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
-    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   github-slugger@2.0.0:
@@ -5248,8 +5248,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.6.2:
-    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -8682,11 +8682,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tiagoporto/prettier-config@2.1.0(prettier@3.6.2)':
+  '@tiagoporto/prettier-config@2.1.0(prettier@3.9.6)':
     dependencies:
-      prettier: 3.6.2
+      prettier: 3.9.6
 
-  '@tiagoporto/remark-config@1.11.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)':
+  '@tiagoporto/remark-config@1.11.0(prettier@3.9.6)(remark-cli@12.0.1)(remark@15.0.1)':
     dependencies:
       remark: 15.0.1
       remark-cli: 12.0.1
@@ -8699,7 +8699,7 @@ snapshots:
       remark-preset-lint-consistent: 6.0.1
       remark-preset-lint-markdown-style-guide: 6.0.1
       remark-preset-lint-recommended: 7.0.1
-      remark-preset-prettier: 2.0.2(prettier@3.6.2)
+      remark-preset-prettier: 2.0.2(prettier@3.9.6)
       remark-retext: 6.0.1
       remark-validate-links: 13.1.0
       retext-english: 5.0.0
@@ -12976,7 +12976,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.6.2: {}
+  prettier@3.9.6: {}
 
   pretty-bytes@5.6.0: {}
 
@@ -13766,9 +13766,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-preset-prettier@2.0.2(prettier@3.6.2):
+  remark-preset-prettier@2.0.2(prettier@3.9.6):
     dependencies:
-      prettier: 3.6.2
+      prettier: 3.9.6
 
   remark-retext@6.0.1:
     dependencies:
