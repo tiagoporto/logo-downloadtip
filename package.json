@@ -42,7 +42,7 @@
     "@open-wc/testing": "^4.0.0",
     "@stencil/core": "^4.38.3",
     "@tiagoporto/dependabot-config": "^2.6.0",
-    "@tiagoporto/editor-config": "^2.1.0",
+    "@tiagoporto/editor-config": "^2.2.0",
     "@tiagoporto/eslint-config": "^6.4.0",
     "@tiagoporto/prettier-config": "^2.1.0",
     "@tiagoporto/remark-config": "^1.11.0",
